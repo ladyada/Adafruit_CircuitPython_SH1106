@@ -79,6 +79,7 @@ class SH1106(displayio.Display):
             #                upper column command = 0x10 - 0x17
             #                set page address     = 0xB0 - 0xBF (16 pages)
             SH1107_addressing=True,
+            colstart=4,
         )
         self._is_awake = True  # Display starts in active state (_INIT_SEQUENCE)
 
